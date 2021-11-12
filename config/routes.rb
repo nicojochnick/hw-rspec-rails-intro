@@ -5,6 +5,8 @@ Rottenpotatoes::Application.routes.draw do
     root :to => redirect('/movies')
     get "/search_tmbd", to:"movies#search_tmdb"
     post "/search_tmbd", to:"movies#add_movie"
+    put "/search_tmbd", to:"movies#add_movie"
+
   end
 
 
