@@ -18,10 +18,18 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry'
   gem 'pry-byebug'
+  gem "webmock"
+
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3.6'
   gem 'web-console', group: :development
+end
+
+gem 'faraday'  # in main group; simplifies calling TMDb
+group :test do
+  gem 'rails-controller-testing'
+  gem 'guard-rspec'                 # automates re-running tests
 end
 
 group :production do
