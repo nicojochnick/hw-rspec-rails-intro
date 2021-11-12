@@ -12,7 +12,8 @@
 
 <div class="search-container">
 <%# Part 1 here %>
-<%= form_tag search_tmdb_path, :method => :put, id: 'ratings_form'  do >
+
+<%= form_tag search_tmbd_path, id: 'ratings_form', :method => :put do %>
     <label for="searchMovieName">Movie Name</label>
     <%= text_field_tag 'title', nil, class: "form-control", id: "movie_title_field", placeholder: "Manhunter", id: "movie_title_field"%> 
     <label for="searchReleaseDateField">Release Year</label>
