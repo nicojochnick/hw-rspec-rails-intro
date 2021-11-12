@@ -4,7 +4,7 @@ class Movie < ActiveRecord::Base
     end
   
   def self.find_in_tmdb(search_terms)
-        Faraday.get(string)
+        Faraday.get('https://cs169.org')
 
   end
 
